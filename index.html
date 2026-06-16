@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medilife Health Service — AI-Powered Lead Generation</title>
+<title>Medilife Healthcare Group — UAE Home Health Services</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --navy:    #0B1F3A;
-    --white:   #F8FAFB;
-    --sage:    #2D7A6B;
-    --teal:    #1A9E8A;
-    --slate:   #4A5568;
-    --silver:  #E8EDF2;
-    --mid:     #8B9BB4;
-    --accent:  #E8F4F1;
+    --navy:   #0B2545;
+    --white:  #F8FAFB;
+    --teal:   #00A99D;
+    --teal2:  #007D76;
+    --slate:  #4A5568;
+    --silver: #E8EDF2;
+    --mid:    #8B9BB4;
+    --accent: #E6F7F6;
+    --gold:   #C9A84C;
   }
 
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Inter', sans-serif;
     background: var(--white);
@@ -32,890 +32,483 @@
 
   /* ── NAV ── */
   nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: rgba(11, 31, 58, 0.97);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(11,37,69,0.97);
     backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 48px;
-    height: 64px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 68px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
   }
-
-  .nav-logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.25rem;
-    color: var(--white);
-    letter-spacing: -0.02em;
-  }
-
-  .nav-logo span {
-    color: var(--teal);
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-  }
-
+  .nav-logo img { height: 44px; width: auto; object-fit: contain; }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
   .nav-links a {
-    color: var(--mid);
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    color: var(--mid); text-decoration: none;
+    font-size: 0.82rem; font-weight: 500;
+    letter-spacing: 0.05em; text-transform: uppercase;
     transition: color 0.2s;
   }
-
-  .nav-links a:hover { color: var(--white); }
-
+  .nav-links a:hover { color: var(--teal); }
   .nav-cta {
-    background: var(--teal);
-    color: var(--white);
-    border: none;
-    padding: 10px 24px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
-    text-decoration: none;
-    display: inline-block;
+    background: var(--teal); color: var(--white); border: none;
+    padding: 10px 22px; font-family: 'Inter', sans-serif;
+    font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    cursor: pointer; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
   }
-
-  .nav-cta:hover { background: #138f7a; }
+  .nav-cta:hover { background: var(--teal2); }
 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
-    background: var(--navy);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 120px 48px 80px;
-    gap: 80px;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(135deg, #0B2545 0%, #0d3060 60%, #0B2545 100%);
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center; padding: 120px 48px 80px; gap: 64px;
+    position: relative; overflow: hidden;
   }
-
-  .hero::before {
+  .hero::after {
     content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 50%;
-    height: 100%;
-    background: radial-gradient(ellipse at 80% 40%, rgba(26,158,138,0.08) 0%, transparent 70%);
+    position: absolute; top: 0; right: 0;
+    width: 55%; height: 100%;
+    background: radial-gradient(ellipse at 80% 40%, rgba(0,169,157,0.10) 0%, transparent 65%);
     pointer-events: none;
   }
-
-  .hero-eyebrow {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(0,169,157,0.12); border: 1px solid rgba(0,169,157,0.25);
+    padding: 6px 14px; margin-bottom: 24px;
   }
-
-  .hero-eyebrow::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1.5px;
-    background: var(--teal);
+  .hero-tag span {
+    font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal);
   }
+  .hero-tag-dot {
+    width: 6px; height: 6px; background: var(--teal); border-radius: 50%;
+    animation: blink 1.8s ease infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
   .hero h1 {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.4rem, 4vw, 3.6rem);
-    line-height: 1.1;
-    color: var(--white);
-    letter-spacing: -0.02em;
-    margin-bottom: 24px;
+    font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+    line-height: 1.1; color: var(--white);
+    letter-spacing: -0.02em; margin-bottom: 20px;
   }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--teal);
-  }
-
+  .hero h1 em { font-style: italic; color: var(--teal); }
   .hero-sub {
-    color: var(--mid);
-    font-size: 1.05rem;
-    font-weight: 400;
-    max-width: 460px;
-    margin-bottom: 40px;
-    line-height: 1.75;
+    color: var(--mid); font-size: 1rem; max-width: 460px;
+    margin-bottom: 16px; line-height: 1.75;
   }
-
-  .hero-actions {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+  .hero-dha {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 0.72rem; color: var(--gold);
+    font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; margin-bottom: 32px;
   }
+  .hero-dha::before {
+    content: '';
+    display: block; width: 16px; height: 1px; background: var(--gold);
+  }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
   .btn-primary {
-    background: var(--teal);
-    color: var(--white);
-    border: none;
-    padding: 15px 32px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
-    text-decoration: none;
-    display: inline-block;
+    background: var(--teal); color: var(--white); border: none;
+    padding: 14px 30px; font-family: 'Inter', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    cursor: pointer; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
   }
+  .btn-primary:hover { background: var(--teal2); }
 
-  .btn-primary:hover { background: #138f7a; }
+  .btn-wa {
+    background: #25D366; color: var(--white); border: none;
+    padding: 14px 30px; font-family: 'Inter', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    cursor: pointer; transition: background 0.2s;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-wa:hover { background: #1dbd5a; }
+  .btn-wa svg { width: 16px; height: 16px; fill: white; flex-shrink: 0; }
 
   .btn-ghost {
-    background: transparent;
-    color: var(--mid);
-    border: 1px solid rgba(139,155,180,0.35);
-    padding: 15px 32px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    display: inline-block;
+    background: transparent; color: var(--mid);
+    border: 1.5px solid rgba(139,155,180,0.3);
+    padding: 14px 30px; font-family: 'Inter', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    cursor: pointer; transition: all 0.2s;
+    text-decoration: none; display: inline-block;
   }
+  .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
 
-  .btn-ghost:hover {
-    border-color: var(--teal);
-    color: var(--teal);
-  }
-
-  /* Pulse Line Signature */
-  .hero-visual {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
+  /* Hero visual card */
+  .hero-visual { position: relative; z-index: 1; }
   .pulse-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 48px 40px;
-    width: 100%;
-    max-width: 440px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    padding: 36px 32px;
   }
-
   .pulse-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--mid);
-    margin-bottom: 16px;
+    font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mid); margin-bottom: 14px;
   }
-
-  .pulse-svg {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 32px;
-  }
-
+  .pulse-svg { width: 100%; height: 72px; margin-bottom: 28px; }
   .pulse-path {
-    stroke: var(--teal);
-    stroke-width: 2;
-    fill: none;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
-    animation: draw-pulse 2.5s ease forwards 0.5s;
+    stroke: var(--teal); stroke-width: 1.8; fill: none;
+    stroke-dasharray: 600; stroke-dashoffset: 600;
+    animation: draw 2.5s ease forwards 0.6s;
   }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
 
-  @keyframes draw-pulse {
-    to { stroke-dashoffset: 0; }
-  }
-
-  .pulse-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-  }
-
-  .stat-item {}
-
+  .pulse-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
   .stat-num {
     font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
-    color: var(--white);
-    line-height: 1;
-    margin-bottom: 4px;
+    font-size: 1.9rem; color: var(--white); line-height: 1; margin-bottom: 4px;
   }
+  .stat-num span { color: var(--teal); }
+  .stat-desc { font-size: 0.68rem; color: var(--mid); font-weight: 500; line-height: 1.4; }
 
-  .stat-num span {
-    color: var(--teal);
+  /* Services served bar */
+  .services-bar {
+    background: var(--navy); padding: 0 48px;
+    display: flex; align-items: stretch; gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    overflow-x: auto;
   }
-
-  .stat-desc {
-    font-size: 0.7rem;
-    color: var(--mid);
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    line-height: 1.4;
-  }
-
-  /* ── TRUST BAR ── */
-  .trust-bar {
-    background: var(--silver);
-    padding: 20px 48px;
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    overflow: hidden;
-  }
-
-  .trust-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--mid);
-    white-space: nowrap;
+  .svc-item {
+    padding: 16px 24px; border-right: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--mid); white-space: nowrap;
+    transition: color 0.2s; cursor: default;
     flex-shrink: 0;
   }
-
-  .trust-items {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .trust-item {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--slate);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    white-space: nowrap;
+  .svc-item:hover { color: var(--teal); }
+  .svc-label {
+    padding: 16px 24px 16px 0;
+    font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--teal); white-space: nowrap; flex-shrink: 0;
+    border-right: 1px solid rgba(255,255,255,0.06);
   }
 
   /* ── SECTIONS ── */
-  section {
-    padding: 96px 48px;
-  }
-
+  section { padding: 88px 48px; }
   .section-eyebrow {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
   }
-
   .section-eyebrow::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1.5px;
-    background: var(--teal);
+    content: ''; display: block;
+    width: 20px; height: 1.5px; background: var(--teal);
   }
-
   .section-title {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
-    letter-spacing: -0.02em;
-    color: var(--navy);
-    line-height: 1.15;
-    margin-bottom: 16px;
+    font-size: clamp(1.7rem, 2.8vw, 2.6rem);
+    letter-spacing: -0.02em; color: var(--navy);
+    line-height: 1.15; margin-bottom: 14px;
   }
-
   .section-sub {
-    font-size: 1rem;
-    color: var(--slate);
-    max-width: 560px;
-    line-height: 1.75;
+    font-size: 0.97rem; color: var(--slate);
+    max-width: 560px; line-height: 1.75;
   }
 
-  /* ── PACKAGE SECTION ── */
-  .package-section {
-    background: var(--white);
-  }
-
-  .package-header {
-    max-width: 1200px;
-    margin: 0 auto 64px;
-  }
-
-  .package-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    background: var(--silver);
-  }
-
-  .package-card {
-    background: var(--white);
-    padding: 40px 36px;
-    position: relative;
-    transition: transform 0.2s;
-  }
-
-  .package-card:hover {
-    transform: translateY(-4px);
-    z-index: 1;
-    box-shadow: 0 16px 48px rgba(11,31,58,0.10);
-  }
-
-  .package-card.featured {
-    background: var(--navy);
-  }
-
-  .card-tag {
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 12px;
-    display: block;
-  }
-
-  .card-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    color: var(--navy);
-  }
-
-  .package-card.featured .card-title { color: var(--white); }
-
-  .card-desc {
-    font-size: 0.88rem;
-    color: var(--slate);
-    line-height: 1.6;
-    margin-bottom: 28px;
-  }
-
-  .package-card.featured .card-desc { color: var(--mid); }
-
-  .card-features {
-    list-style: none;
-    margin-bottom: 36px;
-  }
-
-  .card-features li {
-    font-size: 0.84rem;
-    color: var(--slate);
-    padding: 10px 0;
-    border-bottom: 1px solid var(--silver);
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    line-height: 1.5;
-  }
-
-  .package-card.featured .card-features li {
-    color: var(--mid);
-    border-bottom-color: rgba(255,255,255,0.07);
-  }
-
-  .card-features li::before {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 6px;
-    min-width: 6px;
-    background: var(--teal);
-    margin-top: 6px;
-  }
-
-  .btn-card {
-    display: block;
-    text-align: center;
-    padding: 14px 24px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-    border: none;
-    width: 100%;
-  }
-
-  .btn-card-outline {
-    background: transparent;
-    border: 1.5px solid var(--navy);
-    color: var(--navy);
-  }
-
-  .btn-card-outline:hover {
-    background: var(--navy);
-    color: var(--white);
-  }
-
-  .btn-card-solid {
-    background: var(--teal);
-    color: var(--white);
-  }
-
-  .btn-card-solid:hover { background: #138f7a; }
-
-  .btn-card-ghost {
-    background: transparent;
-    border: 1.5px solid rgba(255,255,255,0.2);
-    color: var(--mid);
-  }
-
-  .btn-card-ghost:hover {
-    border-color: var(--teal);
-    color: var(--teal);
-  }
-
-  /* ── FEATURES SECTION ── */
-  .features-section {
-    background: var(--navy);
-  }
-
-  .features-section .section-title { color: var(--white); }
-  .features-section .section-sub { color: var(--mid); }
-  .features-section .section-eyebrow::before { background: var(--teal); }
-
-  .features-grid {
-    max-width: 1200px;
-    margin: 56px auto 0;
+  /* ── SERVICES ── */
+  .services-section { background: var(--white); }
+  .services-inner { max-width: 1200px; margin: 0 auto; }
+  .services-header { margin-bottom: 56px; }
+  .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
-    background: rgba(255,255,255,0.05);
+    gap: 2px; background: var(--silver);
   }
-
-  .feature-card {
-    background: var(--navy);
-    padding: 36px 28px;
-    transition: background 0.2s;
+  .service-card {
+    background: var(--white); padding: 32px 28px;
+    transition: all 0.2s; cursor: default;
+    border-top: 2px solid transparent;
   }
-
-  .feature-card:hover {
-    background: rgba(26,158,138,0.07);
+  .service-card:hover {
+    border-top-color: var(--teal);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(11,37,69,0.09);
+    z-index: 1; position: relative;
   }
-
-  .feature-num {
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--teal);
-    text-transform: uppercase;
+  .svc-icon {
+    width: 44px; height: 44px; background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
     margin-bottom: 16px;
   }
-
-  .feature-title {
+  .svc-icon svg { width: 22px; height: 22px; fill: var(--teal); }
+  .svc-name {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.2rem;
-    color: var(--white);
-    margin-bottom: 12px;
-    line-height: 1.2;
+    font-size: 1.05rem; color: var(--navy); margin-bottom: 8px;
   }
+  .svc-desc { font-size: 0.8rem; color: var(--slate); line-height: 1.6; }
 
-  .feature-text {
-    font-size: 0.84rem;
-    color: var(--mid);
-    line-height: 1.65;
+  /* ── WHY MEDILIFE ── */
+  .why-section { background: var(--navy); }
+  .why-section .section-title { color: var(--white); }
+  .why-section .section-sub { color: var(--mid); }
+  .why-inner { max-width: 1200px; margin: 0 auto; }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2px; background: rgba(255,255,255,0.05);
+    margin-top: 56px;
   }
-
-  /* ── FORM SECTION ── */
-  .form-section {
-    background: var(--silver);
+  .why-card { background: var(--navy); padding: 36px 30px; transition: background 0.2s; }
+  .why-card:hover { background: rgba(0,169,157,0.07); }
+  .why-num {
+    font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 0.12em; color: var(--teal);
+    text-transform: uppercase; margin-bottom: 14px;
   }
-
-  .form-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-
-  .form-info .section-sub {
-    margin-bottom: 40px;
-  }
-
-  .info-points {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .info-points li {
-    font-size: 0.88rem;
-    color: var(--slate);
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    line-height: 1.55;
-  }
-
-  .info-points li .dot {
-    display: block;
-    width: 8px;
-    height: 8px;
-    min-width: 8px;
-    background: var(--teal);
-    margin-top: 5px;
-  }
-
-  .lead-form {
-    background: var(--white);
-    padding: 44px 40px;
-    border-top: 3px solid var(--teal);
-  }
-
-  .form-title {
+  .why-title {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem;
-    color: var(--navy);
-    margin-bottom: 6px;
+    font-size: 1.15rem; color: var(--white); margin-bottom: 10px;
   }
-
-  .form-subtitle {
-    font-size: 0.82rem;
-    color: var(--mid);
-    margin-bottom: 28px;
-    line-height: 1.55;
-  }
-
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-
-  .form-group {
-    margin-bottom: 16px;
-  }
-
-  label {
-    display: block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--slate);
-    margin-bottom: 6px;
-  }
-
-  input, select, textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1.5px solid var(--silver);
-    background: var(--white);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.88rem;
-    color: var(--navy);
-    outline: none;
-    transition: border-color 0.2s;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-
-  input:focus, select:focus, textarea:focus {
-    border-color: var(--teal);
-  }
-
-  input::placeholder, textarea::placeholder {
-    color: var(--mid);
-  }
-
-  select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238B9BB4'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    padding-right: 36px;
-    cursor: pointer;
-  }
-
-  textarea { resize: vertical; min-height: 100px; }
-
-  .form-consent {
-    font-size: 0.75rem;
-    color: var(--mid);
-    margin: 16px 0 24px;
-    line-height: 1.55;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .form-consent input[type="checkbox"] {
-    width: 14px;
-    height: 14px;
-    min-width: 14px;
-    padding: 0;
-    margin-top: 2px;
-    accent-color: var(--teal);
-    cursor: pointer;
-  }
-
-  .btn-submit {
-    width: 100%;
-    background: var(--navy);
-    color: var(--white);
-    border: none;
-    padding: 16px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-
-  .btn-submit:hover { background: var(--teal); }
+  .why-text { font-size: 0.83rem; color: var(--mid); line-height: 1.65; }
 
   /* ── HOW IT WORKS ── */
-  .how-section {
-    background: var(--white);
-  }
-
-  .how-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .how-header {
-    margin-bottom: 64px;
-  }
-
+  .how-section { background: var(--white); }
+  .how-inner { max-width: 1200px; margin: 0 auto; }
   .steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    position: relative;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; position: relative; margin-top: 56px;
   }
-
   .steps::before {
-    content: '';
-    position: absolute;
-    top: 28px;
-    left: calc(12.5% + 24px);
-    right: calc(12.5% + 24px);
-    height: 1px;
-    background: var(--silver);
-    z-index: 0;
+    content: ''; position: absolute;
+    top: 27px; left: calc(12.5% + 20px); right: calc(12.5% + 20px);
+    height: 1px; background: var(--silver); z-index: 0;
   }
-
-  .step {
-    padding: 0 24px 0 0;
-    position: relative;
-    z-index: 1;
-  }
-
-  .step-number {
-    width: 56px;
-    height: 56px;
-    background: var(--white);
+  .step { padding-right: 24px; position: relative; z-index: 1; }
+  .step-num {
+    width: 54px; height: 54px; background: var(--white);
     border: 1.5px solid var(--silver);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     font-family: 'DM Serif Display', serif;
-    font-size: 1.2rem;
-    color: var(--navy);
-    margin-bottom: 24px;
-    transition: all 0.2s;
+    font-size: 1.2rem; color: var(--navy);
+    margin-bottom: 22px; transition: all 0.2s;
   }
+  .step:hover .step-num { border-color: var(--teal); color: var(--teal); }
+  .step-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 8px; }
+  .step-text { font-size: 0.82rem; color: var(--slate); line-height: 1.65; }
 
-  .step:hover .step-number {
-    border-color: var(--teal);
-    color: var(--teal);
+  /* ── TEAM ── */
+  .team-section { background: var(--silver); }
+  .team-inner { max-width: 1200px; margin: 0 auto; }
+  .team-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px; margin-top: 48px;
   }
-
-  .step-title {
+  .team-card { background: var(--white); padding: 28px; display: flex; gap: 20px; align-items: flex-start; }
+  .team-img {
+    width: 64px; height: 64px; object-fit: cover;
+    flex-shrink: 0; border: 2px solid var(--silver);
+  }
+  .team-name {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.15rem;
-    color: var(--navy);
-    margin-bottom: 10px;
+    font-size: 1rem; color: var(--navy); margin-bottom: 3px;
   }
-
-  .step-text {
-    font-size: 0.84rem;
-    color: var(--slate);
-    line-height: 1.65;
-  }
+  .team-role { font-size: 0.72rem; color: var(--mid); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
 
   /* ── TESTIMONIALS ── */
-  .testimonials-section {
-    background: var(--accent);
-  }
+  .testimonials-section { background: var(--accent); }
+  .test-inner { max-width: 1200px; margin: 0 auto; }
+  .test-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
+  .test-card { background: var(--white); padding: 32px; border-left: 3px solid var(--teal); }
+  .test-quote { font-size: 0.9rem; color: var(--slate); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+  .test-author { font-size: 0.78rem; font-weight: 700; color: var(--navy); letter-spacing: 0.03em; text-transform: uppercase; }
+  .test-source { font-size: 0.72rem; color: var(--teal); margin-top: 2px; font-weight: 500; }
 
-  .testimonials-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  /* ── FORM ── */
+  .form-section { background: var(--white); }
+  .form-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+  .form-info .section-sub { margin-bottom: 36px; }
+  .info-points { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .info-points li { font-size: 0.86rem; color: var(--slate); display: flex; gap: 12px; align-items: flex-start; line-height: 1.55; }
+  .dot { display: block; width: 8px; height: 8px; min-width: 8px; background: var(--teal); margin-top: 4px; }
 
-  .testimonials-grid {
-    margin-top: 48px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+  .contact-methods { margin-top: 36px; display: flex; flex-direction: column; gap: 12px; }
+  .contact-row {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 0.84rem; color: var(--slate);
   }
+  .contact-row a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  .contact-row a:hover { text-decoration: underline; }
+  .c-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--mid); width: 56px; flex-shrink: 0; }
 
-  .testimonial-card {
-    background: var(--white);
-    padding: 32px;
-    border-left: 3px solid var(--teal);
+  .lead-form { background: var(--navy); padding: 44px 40px; }
+  .form-title { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--white); margin-bottom: 6px; }
+  .form-subtitle { font-size: 0.8rem; color: var(--mid); margin-bottom: 28px; line-height: 1.55; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { margin-bottom: 14px; }
+  label {
+    display: block; font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--mid); margin-bottom: 6px;
   }
-
-  .testimonial-quote {
-    font-size: 0.92rem;
-    color: var(--slate);
-    line-height: 1.7;
-    margin-bottom: 24px;
-    font-style: italic;
+  input, select, textarea {
+    width: 100%; padding: 11px 14px;
+    border: 1.5px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.05);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.86rem; color: var(--white); outline: none;
+    transition: border-color 0.2s; -webkit-appearance: none; appearance: none;
   }
-
-  .testimonial-author {
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--navy);
+  input:focus, select:focus, textarea:focus { border-color: var(--teal); }
+  input::placeholder, textarea::placeholder { color: rgba(139,155,180,0.6); }
+  select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238B9BB4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; cursor: pointer; }
+  select option { background: #0B2545; color: var(--white); }
+  textarea { resize: vertical; min-height: 90px; }
+  .form-consent { font-size: 0.73rem; color: var(--mid); margin: 14px 0 22px; line-height: 1.55; display: flex; gap: 10px; align-items: flex-start; }
+  .form-consent input[type="checkbox"] { width: 14px; height: 14px; min-width: 14px; padding: 0; margin-top: 2px; accent-color: var(--teal); cursor: pointer; }
+  .btn-submit {
+    width: 100%; background: var(--teal); color: var(--white); border: none;
+    padding: 15px; font-family: 'Inter', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.07em; text-transform: uppercase;
+    cursor: pointer; transition: background 0.2s;
   }
+  .btn-submit:hover { background: var(--teal2); }
 
-  .testimonial-role {
-    font-size: 0.75rem;
-    color: var(--mid);
-    margin-top: 2px;
-  }
+  /* ── PARTNERS ── */
+  .partners-section { background: var(--silver); padding: 48px; }
+  .partners-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
+  .partners-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); flex-shrink: 0; }
+  .partner-logo { height: 36px; width: auto; object-fit: contain; opacity: 0.7; transition: opacity 0.2s; }
+  .partner-logo:hover { opacity: 1; }
+  .partner-text { font-size: 0.8rem; font-weight: 700; color: var(--slate); letter-spacing: 0.04em; text-transform: uppercase; }
 
-  /* ── CTA SECTION ── */
-  .cta-section {
-    background: var(--navy);
-    text-align: center;
-    padding: 100px 48px;
-  }
-
-  .cta-section .section-eyebrow {
-    justify-content: center;
-  }
-
+  /* ── CTA ── */
+  .cta-section { background: var(--teal); padding: 80px 48px; text-align: center; }
+  .cta-section .section-eyebrow { justify-content: center; }
   .cta-section .section-eyebrow::before { display: none; }
-
-  .cta-section .section-title { color: var(--white); margin: 0 auto 16px; }
-
-  .cta-section .section-sub {
-    color: var(--mid);
-    margin: 0 auto 40px;
-    text-align: center;
-  }
-
-  .cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  .cta-section .section-eyebrow { color: rgba(255,255,255,0.7); }
+  .cta-section .section-title { color: var(--white); max-width: 600px; margin: 0 auto 14px; }
+  .cta-section .section-sub { color: rgba(255,255,255,0.75); max-width: 480px; margin: 0 auto 36px; text-align: center; }
+  .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-white { background: var(--white); color: var(--teal); border: none; padding: 14px 30px; font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+  .btn-white:hover { background: var(--navy); color: var(--white); }
+  .btn-outline-white { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.5); padding: 14px 30px; font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+  .btn-outline-white:hover { border-color: white; background: rgba(255,255,255,0.1); }
 
   /* ── FOOTER ── */
-  footer {
-    background: #070f1d;
-    padding: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .footer-logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.1rem;
-    color: var(--white);
-  }
-
-  .footer-logo span { color: var(--teal); }
-
-  .footer-links {
-    display: flex;
-    gap: 28px;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-
-  .footer-links a {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--mid);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
+  footer { background: #060f1c; padding: 48px; }
+  .footer-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .footer-logo img { height: 40px; width: auto; object-fit: contain; }
+  .footer-tagline { font-size: 0.75rem; color: var(--mid); margin-top: 10px; max-width: 220px; line-height: 1.55; }
+  .footer-col-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .footer-links a { font-size: 0.78rem; color: var(--mid); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--teal); }
+  .footer-socials { display: flex; gap: 12px; margin-top: 14px; }
+  .social-btn { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; transition: all 0.2s; text-decoration: none; }
+  .social-btn:hover { border-color: var(--teal); background: rgba(0,169,157,0.1); }
+  .social-btn svg { width: 15px; height: 15px; fill: var(--mid); }
+  .social-btn:hover svg { fill: var(--teal); }
+  .footer-bottom { margin-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-copy { font-size: 0.7rem; color: rgba(139,155,180,0.5); }
+  .footer-dha { font-size: 0.68rem; color: var(--gold); font-weight: 600; letter-spacing: 0.05em; }
 
-  .footer-copy {
-    font-size: 0.72rem;
-    color: rgba(139,155,180,0.6);
-    letter-spacing: 0.02em;
+  /* ── CHATBOT ── */
+  #chatToggle {
+    position: fixed; bottom: 28px; right: 28px; z-index: 999;
+    width: 58px; height: 58px;
+    background: var(--teal); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 28px rgba(0,169,157,0.4);
+    transition: background 0.2s, transform 0.2s;
   }
+  #chatToggle:hover { background: var(--teal2); transform: scale(1.05); }
+  #chatToggle svg { width: 24px; height: 24px; fill: white; }
+  #chatToggle .close-icon { display: none; }
+  #chatToggle.open .chat-icon { display: none; }
+  #chatToggle.open .close-icon { display: block; }
+  #chatToggle::before {
+    content: ''; position: absolute;
+    width: 58px; height: 58px;
+    border: 2px solid var(--teal); border-radius: 0;
+    animation: ring 2.5s ease-out infinite; pointer-events: none;
+  }
+  @keyframes ring { 0%{transform:scale(1);opacity:.6} 100%{transform:scale(1.75);opacity:0} }
+  #chatBadge { position: absolute; top: -4px; right: -4px; width: 14px; height: 14px; background: #E53E3E; border: 2px solid white; border-radius: 50%; display: none; }
+
+  #chatWindow {
+    position: fixed; bottom: 98px; right: 28px; width: 360px; max-height: 520px;
+    z-index: 998; background: var(--white);
+    border: 1px solid var(--silver); display: flex; flex-direction: column;
+    box-shadow: 0 24px 64px rgba(11,37,69,0.2);
+    transform: translateY(20px) scale(0.97); opacity: 0;
+    pointer-events: none; transition: all 0.25s ease;
+  }
+  #chatWindow.open { transform: translateY(0) scale(1); opacity: 1; pointer-events: all; }
+
+  .chat-header { background: var(--navy); padding: 16px 20px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+  .chat-avatar { width: 38px; height: 38px; background: var(--teal); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .chat-avatar img { width: 38px; height: 38px; object-fit: cover; }
+  .chat-name { font-size: 0.82rem; font-weight: 700; color: var(--white); }
+  .chat-status { font-size: 0.67rem; color: var(--teal); font-weight: 500; display: flex; align-items: center; gap: 5px; margin-top: 2px; }
+  .chat-status::before { content: ''; display: block; width: 6px; height: 6px; background: var(--teal); border-radius: 50%; }
+
+  .chat-messages { flex: 1; overflow-y: auto; padding: 18px 14px; display: flex; flex-direction: column; gap: 10px; min-height: 280px; max-height: 310px; scroll-behavior: smooth; }
+  .chat-messages::-webkit-scrollbar { width: 3px; }
+  .chat-messages::-webkit-scrollbar-thumb { background: var(--silver); }
+
+  .msg { max-width: 88%; font-size: 0.82rem; line-height: 1.55; padding: 10px 13px; animation: msgIn 0.2s ease; }
+  @keyframes msgIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+  .msg.bot { background: var(--silver); color: var(--navy); align-self: flex-start; }
+  .msg.user { background: var(--teal); color: white; align-self: flex-end; }
+  .msg.typing { background: var(--silver); align-self: flex-start; padding: 12px 16px; }
+  .typing-dots { display: flex; gap: 4px; align-items: center; }
+  .typing-dots span { width: 6px; height: 6px; background: var(--mid); border-radius: 50%; animation: dot 1.2s ease infinite; }
+  .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes dot { 0%,80%,100%{transform:translateY(0)} 40%{transform:translateY(-5px)} }
+
+  .quick-replies { display: flex; flex-wrap: wrap; gap: 7px; padding: 0 14px 10px; }
+  .qr-chip { background: transparent; border: 1.5px solid var(--silver); color: var(--slate); font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 600; padding: 5px 11px; cursor: pointer; transition: all 0.18s; white-space: nowrap; }
+  .qr-chip:hover { border-color: var(--teal); color: var(--teal); }
+
+  .chat-input-area { border-top: 1px solid var(--silver); padding: 11px 14px; display: flex; gap: 9px; align-items: flex-end; flex-shrink: 0; }
+  #chatInput { flex: 1; border: 1.5px solid var(--silver); background: var(--white); font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--navy); padding: 9px 12px; outline: none; resize: none; min-height: 38px; max-height: 90px; line-height: 1.4; transition: border-color 0.2s; }
+  #chatInput:focus { border-color: var(--teal); }
+  #chatInput::placeholder { color: var(--mid); }
+  #chatSend { background: var(--teal); border: none; width: 38px; height: 38px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.18s; }
+  #chatSend:hover { background: var(--teal2); }
+  #chatSend svg { width: 16px; height: 16px; fill: white; }
+  #chatSend:disabled { background: var(--silver); cursor: not-allowed; }
+  .chat-foot-note { text-align: center; font-size: 0.63rem; color: var(--mid); padding: 5px 14px 9px; }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    nav { padding: 0 24px; }
+  @media (max-width: 960px) {
+    nav { padding: 0 20px; }
     .nav-links { display: none; }
-
-    .hero {
-      grid-template-columns: 1fr;
-      padding: 100px 24px 60px;
-      gap: 48px;
-    }
-
-    section { padding: 64px 24px; }
-
-    .package-grid { grid-template-columns: 1fr; }
-    .features-grid { grid-template-columns: 1fr 1fr; }
-    .form-inner { grid-template-columns: 1fr; gap: 40px; }
-    .steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
+    section { padding: 60px 24px; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; gap: 36px; }
     .steps::before { display: none; }
-    .testimonials-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .test-grid { grid-template-columns: 1fr; }
+    .form-inner { grid-template-columns: 1fr; gap: 36px; }
     .form-row { grid-template-columns: 1fr; }
-    footer { flex-direction: column; align-items: flex-start; }
-    .trust-bar { padding: 16px 24px; }
+    .footer-top { flex-direction: column; }
+    #chatWindow { width: calc(100vw - 24px); right: 12px; }
+    #chatToggle { right: 14px; bottom: 14px; }
+    .services-bar { padding: 0 20px; }
+    .partners-section { padding: 36px 24px; }
   }
-
   @media (max-width: 560px) {
-    .features-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
-    .step { padding: 0; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .pulse-path { animation: none; stroke-dashoffset: 0; }
-    * { transition: none !important; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-wa, .btn-ghost { width: 100%; text-align: center; justify-content: center; }
   }
 </style>
 </head>
@@ -923,852 +516,636 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Medilife<span>.</span></div>
+  <div class="nav-logo">
+    <img src="https://medilifeglobal.com/wp-content/uploads/2026/04/image-318x88-1.webp"
+         alt="Medilife Healthcare Group"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+    <span style="display:none; font-family:'DM Serif Display',serif; font-size:1.2rem; color:white;">Medilife<span style="color:var(--teal)">.</span></span>
+  </div>
   <ul class="nav-links">
-    <li><a href="#package">Package</a></li>
-    <li><a href="#features">Features</a></li>
+    <li><a href="#services">Services</a></li>
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#contact">Book Appointment</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Get Started</a>
+  <a href="tel:+971523452646" class="nav-cta">Call: +971 52 345 2646</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-eyebrow">AI-Powered Lead Generation</div>
-    <h1>Connect Patients to <em>Care</em> at Scale</h1>
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      <span>Available 24/7 Across UAE</span>
+    </div>
+    <h1>Premium Home Healthcare <em>Delivered</em> to You</h1>
     <p class="hero-sub">
-      Medilife Health Service delivers an intelligent lead generation system designed for healthcare providers — turning qualified interest into booked appointments without the manual overhead.
+      Medilife Healthcare Group brings DHA-certified doctors, nurses, and specialist care directly to your home or hotel in Dubai and across the UAE — no queues, no waiting rooms.
     </p>
+    <div class="hero-dha">DHA Licensed — License No. 0002464</div>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Request a Consultation</a>
-      <a href="#package" class="btn-ghost">View Package</a>
+      <a href="#contact" class="btn-primary">Book an Appointment</a>
+      <a href="https://wa.me/971523452646" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
     </div>
   </div>
 
   <div class="hero-visual">
     <div class="pulse-card">
-      <div class="pulse-label">Live Lead Activity</div>
-      <svg class="pulse-svg" viewBox="0 0 360 80" preserveAspectRatio="none">
-        <path class="pulse-path" d="M0,40 L40,40 L55,40 L65,10 L75,70 L85,40 L95,40 L110,40 L120,40 L130,5 L140,75 L150,40 L165,40 L180,40 L190,18 L200,62 L210,40 L225,40 L240,40 L250,40 L260,28 L270,52 L280,40 L300,40 L310,40 L325,15 L335,65 L345,40 L360,40"/>
-        <line x1="0" y1="40" x2="360" y2="40" stroke="rgba(139,155,180,0.12)" stroke-width="1" stroke-dasharray="4 4"/>
+      <div class="pulse-label">Live Service Activity — UAE</div>
+      <svg class="pulse-svg" viewBox="0 0 360 72" preserveAspectRatio="none">
+        <line x1="0" y1="36" x2="360" y2="36" stroke="rgba(139,155,180,0.1)" stroke-width="1" stroke-dasharray="4 4"/>
+        <path class="pulse-path" d="M0,36 L40,36 L55,36 L65,8 L75,64 L85,36 L95,36 L115,36 L125,36 L135,4 L145,68 L155,36 L170,36 L185,36 L195,16 L205,56 L215,36 L230,36 L248,36 L258,36 L268,24 L278,48 L288,36 L308,36 L320,36 L332,12 L342,60 L352,36 L360,36"/>
       </svg>
       <div class="pulse-stats">
-        <div class="stat-item">
-          <div class="stat-num">340<span>+</span></div>
-          <div class="stat-desc">Monthly Leads Captured</div>
+        <div>
+          <div class="stat-num">24<span>/7</span></div>
+          <div class="stat-desc">Always Available</div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num">82<span>%</span></div>
-          <div class="stat-desc">Qualification Rate</div>
+        <div>
+          <div class="stat-num">60<span>+</span></div>
+          <div class="stat-desc">Min Avg Response</div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num">3.2<span>x</span></div>
-          <div class="stat-desc">Avg Conversion Lift</div>
+        <div>
+          <div class="stat-num">DHA<span>+</span></div>
+          <div class="stat-desc">Certified Team</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <span class="trust-label">Trusted By</span>
-  <div class="trust-items">
-    <span class="trust-item">General Practitioners</span>
-    <span class="trust-item">Specialist Clinics</span>
-    <span class="trust-item">Diagnostic Centers</span>
-    <span class="trust-item">Dental Practices</span>
-    <span class="trust-item">Wellness & Rehab</span>
-  </div>
+<!-- SERVICES BAR -->
+<div class="services-bar">
+  <div class="svc-label">Our Services</div>
+  <div class="svc-item">Blood Test at Home</div>
+  <div class="svc-item">Doctor on Call</div>
+  <div class="svc-item">IV Drip Therapy</div>
+  <div class="svc-item">Home Nursing</div>
+  <div class="svc-item">NAD+ Therapy</div>
+  <div class="svc-item">Physiotherapy</div>
+  <div class="svc-item">PCR Test</div>
+  <div class="svc-item">Vaccinations</div>
+  <div class="svc-item">Air Ambulance</div>
 </div>
+
+<!-- SERVICES SECTION -->
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div class="services-header">
+      <div class="section-eyebrow">What We Offer</div>
+      <h2 class="section-title">Home Health Services in Dubai & UAE</h2>
+      <p class="section-sub">Every service is delivered by DHA-certified professionals — to your home, hotel, or workplace. No queues. No waiting rooms.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></div>
+        <div class="svc-name">Doctor on Call</div>
+        <div class="svc-desc">Licensed home doctors available 24/7 — consultations, prescriptions, and follow-up visits at your location.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div>
+        <div class="svc-name">Home Nursing</div>
+        <div class="svc-desc">Post-operative care, wound dressing, medication administration, and elderly caregiving — all at home.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.87.18-1.33C18 2.53 15.35 1 12.67 1c-1.4 0-2.67.56-3.6 1.47L8 3.54 6.93 2.47C6 1.56 4.73 1 3.33 1 .65 1-2 2.53-2 4.67c0 .46.11.89.18 1.33H-2c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h22c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg></div>
+        <div class="svc-name">IV Drip Therapy</div>
+        <div class="svc-desc">Hydration drips, vitamin infusions, glutathione, NAD+, and hangover recovery — administered by trained nurses.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg></div>
+        <div class="svc-name">Blood Test at Home</div>
+        <div class="svc-desc">Full-body checkups, PCR tests, STD screening, pregnancy blood tests — fast results, DHA-certified nurses.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/></svg></div>
+        <div class="svc-name">Physiotherapy</div>
+        <div class="svc-desc">Mobility improvement, pain relief, post-surgery rehabilitation — at-home physiotherapy tailored to your needs.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg></div>
+        <div class="svc-name">Vaccinations at Home</div>
+        <div class="svc-desc">Flu shots, chickenpox vaccines, HPV, and more — administered safely at home by certified healthcare professionals.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div>
+        <div class="svc-name">Elderly Care</div>
+        <div class="svc-desc">Compassionate daily care for elderly patients — bathing, feeding, companionship, Dementia and Alzheimer's support.</div>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z"/></svg></div>
+        <div class="svc-name">Air Ambulance</div>
+        <div class="svc-desc">Medical evacuation and air ambulance services for time-critical patient transfers — global coverage.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MEDILIFE -->
+<section class="why-section">
+  <div class="why-inner">
+    <div class="section-eyebrow">Why Choose Us</div>
+    <h2 class="section-title">A Global Standard of Care, Delivered Locally</h2>
+    <p class="section-sub">With headquarters in Dubai and regional offices in London, Australia, and India — Medilife brings international expertise to your home.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01 — Credentials</div>
+        <h3 class="why-title">DHA Certified</h3>
+        <p class="why-text">Every doctor, nurse, and healthcare professional on our team is certified by the Dubai Health Authority. Your care is always in qualified hands.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02 — Speed</div>
+        <h3 class="why-title">60-Minute Response</h3>
+        <p class="why-text">From booking to professional at your door — our average response time is 60 minutes. Fast, efficient, and always on time.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03 — Coverage</div>
+        <h3 class="why-title">Across the UAE</h3>
+        <p class="why-text">We serve patients across Dubai, Abu Dhabi, Sharjah, and beyond. Home, hotel, or workplace — we come to you.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04 — Availability</div>
+        <h3 class="why-title">24 / 7 Service</h3>
+        <p class="why-text">Medical needs don't follow business hours. Our team is available around the clock, every day of the year including weekends and public holidays.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05 — Partners</div>
+        <h3 class="why-title">DEWA Corporate Partner</h3>
+        <p class="why-text">Medilife is a trusted corporate healthcare partner of DEWA — one of the UAE's most respected organisations. That trust reflects in everything we do.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06 — Expertise</div>
+        <h3 class="why-title">Global Experience</h3>
+        <p class="why-text">Offices in London, Australia, and India give our clinical team a breadth of experience that goes beyond regional standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- HOW IT WORKS -->
 <section class="how-section" id="how">
   <div class="how-inner">
-    <div class="how-header">
-      <div class="section-eyebrow">The Process</div>
-      <h2 class="section-title">How the System Works</h2>
-      <p class="section-sub">A four-stage pipeline that handles everything from first contact to a qualified patient in your calendar — automatically.</p>
-    </div>
+    <div class="section-eyebrow">The Process</div>
+    <h2 class="section-title">Booking is Simple</h2>
+    <p class="section-sub">Four steps from deciding you need care to having a qualified professional at your door.</p>
     <div class="steps">
       <div class="step">
-        <div class="step-number">1</div>
-        <h3 class="step-title">Capture</h3>
-        <p class="step-text">AI-optimised landing pages and intake forms collect patient interest 24 hours a day across web, mobile, and social channels.</p>
+        <div class="step-num">1</div>
+        <h3 class="step-title">Book Online or Call</h3>
+        <p class="step-text">Use the form below, WhatsApp us, or call directly at +971 52 345 2646. Tell us your location and what you need.</p>
       </div>
       <div class="step">
-        <div class="step-number">2</div>
-        <h3 class="step-title">Qualify</h3>
-        <p class="step-text">Automated scoring filters leads by condition, urgency, location, and insurance eligibility before they ever reach your team.</p>
+        <div class="step-num">2</div>
+        <h3 class="step-title">We Confirm</h3>
+        <p class="step-text">Our team confirms your appointment, matches you with the right specialist, and gives you a clear arrival time — usually within the hour.</p>
       </div>
       <div class="step">
-        <div class="step-number">3</div>
-        <h3 class="step-title">Nurture</h3>
-        <p class="step-text">Personalised email and SMS sequences keep prospects engaged and informed while moving them toward a booked appointment.</p>
+        <div class="step-num">3</div>
+        <h3 class="step-title">Professional Arrives</h3>
+        <p class="step-text">Your DHA-certified doctor, nurse, or specialist arrives at your home, hotel, or workplace fully equipped to provide care.</p>
       </div>
       <div class="step">
-        <div class="step-number">4</div>
-        <h3 class="step-title">Convert</h3>
-        <p class="step-text">Qualified leads are passed directly to your scheduling system with full context — ready to be seen, not just contacted.</p>
+        <div class="step-num">4</div>
+        <h3 class="step-title">Follow-Up Support</h3>
+        <p class="step-text">After your visit, our team follows up to ensure you're recovering well and to arrange any further care or test results.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGE -->
-<section class="package-section" id="package">
-  <div class="package-header">
-    <div class="section-eyebrow">The Package</div>
-    <h2 class="section-title">Choose Your Growth Track</h2>
-    <p class="section-sub">All plans include zero setup fees and are built on HIPAA-compliant infrastructure suitable for healthcare providers in the UAE and GCC.</p>
-  </div>
-  <div class="package-grid">
-
-    <div class="package-card">
-      <span class="card-tag">Starter</span>
-      <h3 class="card-title">Clinic Essentials</h3>
-      <p class="card-desc">The right foundation for small practices that are ready to move beyond word-of-mouth and referrals.</p>
-      <ul class="card-features">
-        <li>1 AI-optimised lead capture page</li>
-        <li>Automated lead qualification scoring</li>
-        <li>Email follow-up sequence (3-step)</li>
-        <li>CRM integration (HubSpot or equivalent)</li>
-        <li>Monthly performance report</li>
-        <li>Up to 150 leads per month</li>
-      </ul>
-      <a href="#contact" class="btn-card btn-card-outline">Request This Plan</a>
-    </div>
-
-    <div class="package-card featured">
-      <span class="card-tag">Most Requested</span>
-      <h3 class="card-title">Growth System</h3>
-      <p class="card-desc">A complete end-to-end patient acquisition system — ideal for growing multi-specialty clinics.</p>
-      <ul class="card-features">
-        <li>3 AI-optimised landing pages</li>
-        <li>Multi-channel lead capture (web, social, WhatsApp)</li>
-        <li>Advanced qualification with condition mapping</li>
-        <li>Email and SMS nurture sequences</li>
-        <li>Calendar booking automation</li>
-        <li>Real-time dashboard and analytics</li>
-        <li>Dedicated account manager</li>
-        <li>Up to 500 leads per month</li>
-      </ul>
-      <a href="#contact" class="btn-card btn-card-solid">Request This Plan</a>
-    </div>
-
-    <div class="package-card">
-      <span class="card-tag">Enterprise</span>
-      <h3 class="card-title">Network Scale</h3>
-      <p class="card-desc">Built for hospital networks, group practices, and health systems with multiple locations and specialties.</p>
-      <ul class="card-features">
-        <li>Unlimited landing pages and funnels</li>
-        <li>Multi-location lead routing</li>
-        <li>Custom AI qualification models</li>
-        <li>Full EMR and HIS integration</li>
-        <li>Paid media management (Google, Meta)</li>
-        <li>Executive reporting and attribution</li>
-        <li>Priority SLA support</li>
-        <li>Unlimited lead volume</li>
-      </ul>
-      <a href="#contact" class="btn-card btn-card-outline">Request This Plan</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="features-section" id="features">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div class="section-eyebrow">What Is Included</div>
-    <h2 class="section-title">Built Specifically for Healthcare</h2>
-    <p class="section-sub">Every component of the system is designed for the compliance standards, patient journey, and operational realities of health service providers.</p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-num">01 — Intake</div>
-      <h3 class="feature-title">Smart Intake Forms</h3>
-      <p class="feature-text">Branching logic forms that adapt based on patient responses, capturing the right information the first time and reducing back-and-forth for your staff.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">02 — Automation</div>
-      <h3 class="feature-title">Workflow Automation</h3>
-      <p class="feature-text">Built on Make.com and n8n, our automation layer handles routing, notifications, follow-ups, and data entry — zero manual processing required.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">03 — Intelligence</div>
-      <h3 class="feature-title">AI Lead Scoring</h3>
-      <p class="feature-text">Proprietary scoring models assess intent, urgency, and fit so your team focuses exclusively on leads most likely to become active patients.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">04 — Compliance</div>
-      <h3 class="feature-title">Data Privacy</h3>
-      <p class="feature-text">All data handling meets UAE PDPL and international HIPAA standards. Patient data is encrypted, access-controlled, and never sold or shared.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">05 — Scheduling</div>
-      <h3 class="feature-title">Booking Integration</h3>
-      <p class="feature-text">Connects directly to your scheduling platform so qualified leads land as booked appointments — not just names in a spreadsheet.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">06 — Analytics</div>
-      <h3 class="feature-title">Live Reporting</h3>
-      <p class="feature-text">A real-time dashboard showing lead volume, channel performance, qualification rates, and appointment conversion — updated daily.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">07 — Channels</div>
-      <h3 class="feature-title">Multi-Channel Reach</h3>
-      <p class="feature-text">Capture leads from Google, Meta, WhatsApp, your website, and referral partnerships — all flowing into a single unified system.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">08 — Support</div>
-      <h3 class="feature-title">Ongoing Optimisation</h3>
-      <p class="feature-text">Monthly reviews, A/B testing on forms and messaging, and continuous tuning of the qualification model to improve results over time.</p>
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="team-inner">
+    <div class="section-eyebrow">Our Leadership</div>
+    <h2 class="section-title">The People Behind Medilife</h2>
+    <p class="section-sub">An experienced and diverse leadership team with clinical, operational, and international expertise.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/Dr.-NAVAS-USMAN-Managing-Director.webp" alt="Dr Navas Usman" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Dr. Navas Usman</div>
+          <div class="team-role">Managing Director</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/JOHAN-P-WIKANDERDirector-Operations.webp" alt="Johan Wikander" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Johan P. Wikander</div>
+          <div class="team-role">Director of Operations</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/DR.-ABDULRAHMAN-Al-Jassmi-Director.webp" alt="Dr Abdul Rahman Al Jassmi" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Dr. Abdul Rahman Al Jassmi</div>
+          <div class="team-role">Director</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/EISA-MOHAM-AD-Board-Director.webp" alt="Eisa Mohammad" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Eisa Mohammad</div>
+          <div class="team-role">Board Director</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/ADV.PRINS-JOSEPH-Director-Legal-Affairs.webp" alt="Adv. Prins Joseph" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Adv. Prins Joseph</div>
+          <div class="team-role">Director of Legal Affairs</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-img" src="https://medilifeglobal.com/wp-content/uploads/2021/11/JOYCE-WANGUI-Director-Intl-Oper.webp" alt="Joyce Wangui" onerror="this.style.background='var(--silver)'">
+        <div>
+          <div class="team-name">Joyce Wangui</div>
+          <div class="team-role">Director of International Operations</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="testimonials-section">
-  <div class="testimonials-inner">
-    <div class="section-eyebrow">Client Results</div>
-    <h2 class="section-title">What Practices Are Saying</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"Within the first 60 days, our new patient bookings increased by 40 percent. The qualification system means we are only speaking with people who actually need our services."</p>
-        <div class="testimonial-author">Dr. A. Al Mansouri</div>
-        <div class="testimonial-role">General Practitioner, Abu Dhabi</div>
+  <div class="test-inner">
+    <div class="section-eyebrow">Patient Stories</div>
+    <h2 class="section-title">What Our Patients Say</h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <p class="test-quote">"Amazing place for treatment. The staff and doctors are so friendly and humble which makes me feel so comfortable. Their insurance policy has made me save lots of money."</p>
+        <div class="test-author">Saleh Shams</div>
+        <div class="test-source">Verified Google Review</div>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"We used to lose leads because there was no one to follow up quickly enough. The automated nurture sequences fixed that entirely — patients come in already informed and ready."</p>
-        <div class="testimonial-author">Operations Director</div>
-        <div class="testimonial-role">Multi-Specialty Clinic, Dubai</div>
-      </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"The reporting alone changed how we think about marketing. We finally know which channels produce real patients, not just clicks."</p>
-        <div class="testimonial-author">Dr. S. Nair</div>
-        <div class="testimonial-role">Specialist Physician, Sharjah</div>
+      <div class="test-card">
+        <p class="test-quote">"Medilife provides the best home care health services in Dubai. I got my PCR test done at home within 1 hour of booking and received my result in just 5 hours. Highly recommended."</p>
+        <div class="test-author">Joel SG</div>
+        <div class="test-source">Verified Google Review</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PARTNERS -->
+<div class="partners-section">
+  <div class="partners-inner">
+    <div class="partners-label">Trusted Partners</div>
+    <img class="partner-logo"
+         src="https://medilifeglobal.com/wp-content/uploads/2026/04/image-270x95-1.webp"
+         alt="DEWA — Corporate Partner"
+         onerror="this.style.display='none'">
+    <span class="partner-text">DEWA Corporate Healthcare Partner</span>
+    <span class="partner-text" style="color:var(--mid);">&#x2022;</span>
+    <span class="partner-text">DHA Licensed — No. 0002464</span>
+    <span class="partner-text" style="color:var(--mid);">&#x2022;</span>
+    <span class="partner-text">ISO Certified</span>
+  </div>
+</div>
+
 <!-- CONTACT FORM -->
 <section class="form-section" id="contact">
   <div class="form-inner">
     <div class="form-info">
-      <div class="section-eyebrow">Get Started</div>
-      <h2 class="section-title">Request a Consultation</h2>
-      <p class="section-sub">Speak with a member of the Medilife team to understand which package fits your practice and what results to expect in the first 90 days.</p>
+      <div class="section-eyebrow">Book Now</div>
+      <h2 class="section-title">Request a Home Visit</h2>
+      <p class="section-sub">Fill in the form and our team will contact you within minutes to confirm your appointment. Available 24/7 across Dubai and the UAE.</p>
       <ul class="info-points">
-        <li><span class="dot"></span>No commitment required for the initial consultation</li>
-        <li><span class="dot"></span>Custom onboarding plan provided within 48 hours</li>
-        <li><span class="dot"></span>No setup fees across all package tiers</li>
-        <li><span class="dot"></span>UAE and GCC healthcare expertise</li>
+        <li><span class="dot"></span>DHA-certified professionals for every service</li>
+        <li><span class="dot"></span>Average 60-minute response time from booking</li>
+        <li><span class="dot"></span>Available at your home, hotel, or workplace</li>
+        <li><span class="dot"></span>Confidential, professional, and compassionate care</li>
         <li><span class="dot"></span>Arabic and English support available</li>
       </ul>
+      <div class="contact-methods">
+        <div class="contact-row">
+          <span class="c-label">Call</span>
+          <a href="tel:+971523452646">+971 52 345 2646</a>
+        </div>
+        <div class="contact-row">
+          <span class="c-label">WhatsApp</span>
+          <a href="https://wa.me/971523452646" target="_blank">+971 52 345 2646</a>
+        </div>
+        <div class="contact-row">
+          <span class="c-label">Email</span>
+          <a href="mailto:support@medilifeglobal.com">support@medilifeglobal.com</a>
+        </div>
+      </div>
     </div>
 
     <div class="lead-form">
-      <h3 class="form-title">Tell Us About Your Practice</h3>
-      <p class="form-subtitle">We will respond within one business day to schedule your consultation.</p>
-
+      <h3 class="form-title">Book Your Appointment</h3>
+      <p class="form-subtitle">We respond within minutes. Available 24 hours a day, 7 days a week.</p>
       <form id="leadForm" onsubmit="handleSubmit(event)">
         <div class="form-row">
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Ahmad" required>
+            <input type="text" id="firstName" placeholder="Ahmad" required>
           </div>
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Al Rashid" required>
+            <input type="text" id="lastName" placeholder="Al Rashid" required>
           </div>
         </div>
-
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp Number</label>
+          <input type="tel" id="phone" placeholder="+971 50 000 0000" required>
+        </div>
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="ahmad@clinic.ae" required>
+          <input type="email" id="email" placeholder="ahmad@email.com">
         </div>
-
         <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000" required>
+          <label for="location">Your Location</label>
+          <input type="text" id="location" placeholder="e.g. Downtown Dubai, JBR, Abu Dhabi" required>
         </div>
-
-        <div class="form-group">
-          <label for="practiceName">Practice or Organisation Name</label>
-          <input type="text" id="practiceName" name="practiceName" placeholder="Al Noor Medical Centre" required>
-        </div>
-
         <div class="form-row">
           <div class="form-group">
-            <label for="specialty">Specialty</label>
-            <select id="specialty" name="specialty" required>
-              <option value="" disabled selected>Select specialty</option>
-              <option>General Practice</option>
-              <option>Cardiology</option>
-              <option>Dermatology</option>
-              <option>Orthopaedics</option>
-              <option>Paediatrics</option>
-              <option>Obstetrics & Gynaecology</option>
-              <option>Dental</option>
-              <option>Physiotherapy & Rehab</option>
-              <option>Diagnostics / Radiology</option>
-              <option>Multi-Specialty</option>
-              <option>Other</option>
+            <label for="service">Service Required</label>
+            <select id="service" required>
+              <option value="" disabled selected>Select service</option>
+              <option>Doctor on Call</option>
+              <option>Blood Test at Home</option>
+              <option>IV Drip Therapy</option>
+              <option>NAD+ IV Therapy</option>
+              <option>Home Nursing</option>
+              <option>Physiotherapy</option>
+              <option>PCR Test at Home</option>
+              <option>Flu Vaccination</option>
+              <option>STD / HIV Test</option>
+              <option>Elderly Care</option>
+              <option>Air Ambulance</option>
+              <option>Other / Not Sure</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="locations">Number of Locations</label>
-            <select id="locations" name="locations" required>
-              <option value="" disabled selected>Select</option>
-              <option>1 location</option>
-              <option>2 to 5 locations</option>
-              <option>6 to 15 locations</option>
-              <option>16 or more</option>
+            <label for="urgency">Urgency</label>
+            <select id="urgency">
+              <option value="" disabled selected>When do you need care?</option>
+              <option>As soon as possible</option>
+              <option>Within today</option>
+              <option>Tomorrow</option>
+              <option>Within the week</option>
+              <option>Just enquiring</option>
             </select>
           </div>
         </div>
-
         <div class="form-group">
-          <label for="package">Package of Interest</label>
-          <select id="package" name="package">
-            <option value="" disabled selected>Select a plan</option>
-            <option>Clinic Essentials — Starter</option>
-            <option>Growth System — Most Requested</option>
-            <option>Network Scale — Enterprise</option>
-            <option>Not sure yet — advise me</option>
-          </select>
+          <label for="notes">Additional Notes (optional)</label>
+          <textarea id="notes" placeholder="Briefly describe your condition or any specific requirements..."></textarea>
         </div>
-
-        <div class="form-group">
-          <label for="challenge">Primary Challenge (optional)</label>
-          <textarea id="challenge" name="challenge" placeholder="Briefly describe what you are trying to improve — e.g. low new patient volume, too many unqualified enquiries, slow follow-up process."></textarea>
-        </div>
-
         <div class="form-consent">
-          <input type="checkbox" id="consent" name="consent" required>
-          <label for="consent" style="text-transform:none;letter-spacing:0;font-weight:400;font-size:0.75rem;color:var(--mid);">I agree to Medilife Health Service contacting me about this enquiry. My information will not be shared with third parties and will be handled in accordance with UAE data protection regulations.</label>
+          <input type="checkbox" id="consent" required>
+          <label for="consent" style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mid);font-size:0.72rem;">I consent to Medilife Healthcare Group contacting me regarding this appointment request. My information will be handled confidentially in line with UAE data protection regulations.</label>
         </div>
-
-        <button type="submit" class="btn-submit" id="submitBtn">Submit Consultation Request</button>
-
-        <div id="formSuccess" style="display:none;margin-top:20px;padding:16px;background:var(--accent);border-left:3px solid var(--teal);font-size:0.84rem;color:var(--sage);font-weight:500;">
-          Your request has been received. A member of the Medilife team will be in touch within one business day.
+        <button type="submit" class="btn-submit" id="submitBtn">Confirm Appointment Request</button>
+        <div id="formSuccess" style="display:none;margin-top:18px;padding:14px;background:rgba(0,169,157,0.1);border-left:3px solid var(--teal);font-size:0.82rem;color:var(--teal);font-weight:600;">
+          Your request has been received. The Medilife team will contact you within minutes to confirm.
         </div>
       </form>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA SECTION -->
 <section class="cta-section">
-  <div class="section-eyebrow">No Fees. No Risk. Just Results.</div>
-  <h2 class="section-title" style="max-width:640px;">Ready to Build a Predictable Patient Pipeline?</h2>
-  <p class="section-sub" style="max-width:500px;">Join healthcare providers across the UAE who are replacing ad-hoc marketing with a system that works around the clock.</p>
+  <div class="section-eyebrow">Available Now — No Queues, No Waiting Rooms</div>
+  <h2 class="section-title">Healthcare at Your Door in 60 Minutes</h2>
+  <p class="section-sub">DHA-certified professionals serving Dubai, Abu Dhabi, Sharjah, and across the UAE — 24 hours a day, 7 days a week.</p>
   <div class="cta-buttons">
-    <a href="#contact" class="btn-primary">Schedule a Free Consultation</a>
-    <a href="tel:+97100000000" class="btn-ghost">Call Us Directly</a>
+    <a href="#contact" class="btn-white">Book an Appointment</a>
+    <a href="https://wa.me/971523452646" target="_blank" class="btn-outline-white">WhatsApp Us Now</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Medilife<span>.</span> Health Service</div>
-  <ul class="footer-links">
-    <li><a href="#package">Package</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-  </ul>
-  <div class="footer-copy">2025 Medilife Health Service. All rights reserved.</div>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <img src="https://medilifeglobal.com/wp-content/uploads/2026/04/image-318x88-1.webp"
+             alt="Medilife Healthcare Group"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'DM Serif Display',serif;font-size:1.1rem;color:white;">Medilife<span style="color:var(--teal)">.</span></span>
+      </div>
+      <p class="footer-tagline">Premium home healthcare services across the UAE. DHA Licensed. Available 24/7.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/medilifeglobal" target="_blank" class="social-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/medilifehealthcare/" target="_blank" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="var(--mid)" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--mid)" stroke-width="2"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/medilife-healthcare/" target="_blank" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://twitter.com/MedilifeCare" target="_blank" class="social-btn" aria-label="Twitter/X">
+          <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="https://medilifeglobal.com/doctor-on-call/" target="_blank">Doctor on Call</a></li>
+        <li><a href="https://medilifeglobal.com/blood-test-at-home-dubai/" target="_blank">Blood Test at Home</a></li>
+        <li><a href="https://medilifeglobal.com/iv-glutathione-nad-treatment-dubai/" target="_blank">IV Drip Therapy</a></li>
+        <li><a href="https://medilifeglobal.com/home-nursing-care/" target="_blank">Home Nursing</a></li>
+        <li><a href="https://medilifeglobal.com/air-ambulance-services-dubai-uae/" target="_blank">Air Ambulance</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">More Services</div>
+      <ul class="footer-links">
+        <li><a href="https://medilifeglobal.com/nad-iv-therapy/" target="_blank">NAD+ IV Therapy</a></li>
+        <li><a href="https://medilifeglobal.com/hiv-test-at-home-dubai/" target="_blank">STD Test at Home</a></li>
+        <li><a href="https://medilifeglobal.com/flu-vaccine-in-dubai/" target="_blank">Flu Vaccination</a></li>
+        <li><a href="https://medilifeglobal.com/pcr-test-at-home-dubai/" target="_blank">PCR Test at Home</a></li>
+        <li><a href="https://medilifeglobal.com/physiotherapy-at-home/" target="_blank">Physiotherapy</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+971523452646">+971 52 345 2646</a></li>
+        <li><a href="mailto:support@medilifeglobal.com">support@medilifeglobal.com</a></li>
+        <li><a href="https://medilifeglobal.com/about/" target="_blank">About Medilife</a></li>
+        <li><a href="https://medilifeglobal.com/blog/" target="_blank">Health Guides</a></li>
+        <li><a href="https://medilifeglobal.com/contact/" target="_blank">Book on Main Site</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">2025 Medilife Healthcare Group. All Rights Reserved.</div>
+    <div class="footer-dha">DHA Approved — License No. 0002464</div>
+  </div>
 </footer>
 
-<!-- ── AI CHAT WIDGET ── -->
-<style>
-  /* Floating button */
-  #chatToggle {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    z-index: 999;
-    width: 56px;
-    height: 56px;
-    background: var(--teal);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 24px rgba(26,158,138,0.35);
-    transition: background 0.2s, transform 0.2s;
-  }
-  #chatToggle:hover { background: #138f7a; transform: scale(1.05); }
-  #chatToggle svg { width: 24px; height: 24px; fill: white; }
-  #chatToggle .close-icon { display: none; }
-  #chatToggle.open .chat-icon { display: none; }
-  #chatToggle.open .close-icon { display: block; }
-
-  /* Pulse ring on the button */
-  #chatToggle::before {
-    content: '';
-    position: absolute;
-    width: 56px; height: 56px;
-    border: 2px solid var(--teal);
-    border-radius: 0;
-    animation: ring-pulse 2.5s ease-out infinite;
-    pointer-events: none;
-  }
-  @keyframes ring-pulse {
-    0%   { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(1.7); opacity: 0; }
-  }
-
-  /* Badge */
-  #chatBadge {
-    position: absolute;
-    top: -4px; right: -4px;
-    width: 14px; height: 14px;
-    background: #E53E3E;
-    border: 2px solid white;
-    border-radius: 50%;
-    font-size: 0;
-  }
-
-  /* Chat window */
-  #chatWindow {
-    position: fixed;
-    bottom: 96px;
-    right: 28px;
-    width: 360px;
-    max-height: 520px;
-    z-index: 998;
-    background: var(--white);
-    border: 1px solid var(--silver);
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 24px 64px rgba(11,31,58,0.18);
-    transform: translateY(20px) scale(0.97);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.25s ease;
-  }
-  #chatWindow.open {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  /* Chat header */
-  .chat-header {
-    background: var(--navy);
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-  }
-  .chat-avatar {
-    width: 36px; height: 36px;
-    background: var(--teal);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .chat-avatar svg { width: 18px; height: 18px; fill: white; }
-  .chat-header-info {}
-  .chat-header-name {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 0.02em;
-  }
-  .chat-header-status {
-    font-size: 0.68rem;
-    color: var(--teal);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-top: 2px;
-  }
-  .chat-header-status::before {
-    content: '';
-    display: block;
-    width: 6px; height: 6px;
-    background: var(--teal);
-    border-radius: 50%;
-  }
-
-  /* Messages area */
-  .chat-messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 20px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    min-height: 280px;
-    max-height: 320px;
-    scroll-behavior: smooth;
-  }
-  .chat-messages::-webkit-scrollbar { width: 4px; }
-  .chat-messages::-webkit-scrollbar-track { background: transparent; }
-  .chat-messages::-webkit-scrollbar-thumb { background: var(--silver); }
-
-  /* Message bubbles */
-  .msg {
-    max-width: 88%;
-    font-size: 0.83rem;
-    line-height: 1.55;
-    padding: 10px 14px;
-    animation: msg-in 0.2s ease;
-  }
-  @keyframes msg-in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
-
-  .msg.bot {
-    background: var(--silver);
-    color: var(--navy);
-    align-self: flex-start;
-    border-bottom-left-radius: 0;
-  }
-  .msg.user {
-    background: var(--teal);
-    color: white;
-    align-self: flex-end;
-    border-bottom-right-radius: 0;
-  }
-  .msg.typing {
-    background: var(--silver);
-    align-self: flex-start;
-    padding: 12px 16px;
-  }
-  .typing-dots {
-    display: flex; gap: 4px; align-items: center;
-  }
-  .typing-dots span {
-    width: 6px; height: 6px;
-    background: var(--mid);
-    border-radius: 50%;
-    animation: dot-bounce 1.2s ease infinite;
-  }
-  .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
-  .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
-  @keyframes dot-bounce {
-    0%, 80%, 100% { transform: translateY(0); }
-    40%           { transform: translateY(-5px); }
-  }
-
-  /* Quick reply chips */
-  .quick-replies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    padding: 0 16px 12px;
-  }
-  .qr-chip {
-    background: transparent;
-    border: 1.5px solid var(--silver);
-    color: var(--slate);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 600;
-    padding: 6px 12px;
-    cursor: pointer;
-    letter-spacing: 0.02em;
-    transition: all 0.18s;
-    white-space: nowrap;
-  }
-  .qr-chip:hover {
-    border-color: var(--teal);
-    color: var(--teal);
-  }
-
-  /* Input area */
-  .chat-input-area {
-    border-top: 1px solid var(--silver);
-    padding: 12px 16px;
-    display: flex;
-    gap: 10px;
-    align-items: flex-end;
-    flex-shrink: 0;
-  }
-  #chatInput {
-    flex: 1;
-    border: 1.5px solid var(--silver);
-    background: var(--white);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.83rem;
-    color: var(--navy);
-    padding: 9px 12px;
-    outline: none;
-    resize: none;
-    min-height: 38px;
-    max-height: 90px;
-    line-height: 1.4;
-    transition: border-color 0.2s;
-  }
-  #chatInput:focus { border-color: var(--teal); }
-  #chatInput::placeholder { color: var(--mid); }
-
-  #chatSend {
-    background: var(--teal);
-    border: none;
-    width: 38px;
-    height: 38px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: background 0.18s;
-  }
-  #chatSend:hover { background: #138f7a; }
-  #chatSend svg { width: 16px; height: 16px; fill: white; }
-  #chatSend:disabled { background: var(--silver); cursor: not-allowed; }
-
-  .chat-footer-note {
-    text-align: center;
-    font-size: 0.65rem;
-    color: var(--mid);
-    padding: 6px 16px 10px;
-    letter-spacing: 0.02em;
-  }
-
-  @media (max-width: 420px) {
-    #chatWindow { width: calc(100vw - 24px); right: 12px; }
-    #chatToggle { right: 16px; bottom: 16px; }
-  }
-</style>
-
-<!-- Chat toggle button -->
-<button id="chatToggle" onclick="toggleChat()" title="Chat with Medilife AI Assistant" aria-label="Open chat">
+<!-- AI CHAT WIDGET -->
+<button id="chatToggle" onclick="toggleChat()" aria-label="Chat with Medilife">
   <span id="chatBadge"></span>
-  <!-- Chat icon -->
-  <svg class="chat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6V10h12v2zm0-3H6V7h12v2z"/>
-  </svg>
-  <!-- Close icon -->
-  <svg class="close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-  </svg>
+  <svg class="chat-icon" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6V10h12v2zm0-3H6V7h12v2z"/></svg>
+  <svg class="close-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 </button>
 
-<!-- Chat window -->
 <div id="chatWindow">
   <div class="chat-header">
     <div class="chat-avatar">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+      <img src="https://medilifeglobal.com/wp-content/uploads/2021/12/cropped-Medilife-Healthcare-Favicon-270x270.webp"
+           alt="Medilife"
+           onerror="this.parentElement.innerHTML='<svg viewBox=\'0 0 24 24\' style=\'width:20px;height:20px;fill:white\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z\'/></svg>'">
     </div>
-    <div class="chat-header-info">
-      <div class="chat-header-name">Medilife AI Assistant</div>
-      <div class="chat-header-status">Online — typically replies instantly</div>
+    <div>
+      <div class="chat-name">Medilife Health Assistant</div>
+      <div class="chat-status">Available Now — Typically replies instantly</div>
     </div>
   </div>
-
-  <div class="chat-messages" id="chatMessages">
-    <!-- Initial bot message injected by JS -->
-  </div>
-
+  <div class="chat-messages" id="chatMessages"></div>
   <div class="quick-replies" id="quickReplies">
     <button class="qr-chip" onclick="sendQuick('What services do you offer?')">Services</button>
-    <button class="qr-chip" onclick="sendQuick('How does the lead generation work?')">How it works</button>
-    <button class="qr-chip" onclick="sendQuick('What are your package prices?')">Pricing</button>
-    <button class="qr-chip" onclick="sendQuick('I want to book a consultation')">Book a call</button>
+    <button class="qr-chip" onclick="sendQuick('How quickly can a doctor come to me?')">Response time</button>
+    <button class="qr-chip" onclick="sendQuick('I need a blood test at home')">Blood test</button>
+    <button class="qr-chip" onclick="sendQuick('Do you serve Abu Dhabi?')">Coverage area</button>
   </div>
-
   <div class="chat-input-area">
     <textarea id="chatInput" placeholder="Ask about our services..." rows="1"
       onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
-    <button id="chatSend" onclick="sendMessage()" aria-label="Send message">
+    <button id="chatSend" onclick="sendMessage()" aria-label="Send">
       <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
     </button>
   </div>
-  <div class="chat-footer-note">Powered by Medilife AI — responses are informational only</div>
+  <div class="chat-foot-note">Medilife AI — for emergencies call +971 52 345 2646</div>
 </div>
 
 <script>
-  // ── SMOOTH SCROLL ──
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        const top = target.getBoundingClientRect().top + window.scrollY - 80;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 76, behavior: 'smooth' }); }
     });
   });
 
-  // ── FORM SUBMIT ──
+  // Form
   function handleSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
-    const success = document.getElementById('formSuccess');
-    btn.textContent = 'Submitting...';
-    btn.disabled = true;
-    btn.style.background = 'var(--slate)';
+    btn.textContent = 'Submitting...'; btn.disabled = true; btn.style.background = '#2D7A6B';
     setTimeout(() => {
-      success.style.display = 'block';
-      btn.textContent = 'Request Submitted';
-      e.target.querySelectorAll('input:not([type="checkbox"]), select, textarea').forEach(el => el.value = '');
+      document.getElementById('formSuccess').style.display = 'block';
+      btn.textContent = 'Request Confirmed';
+      e.target.querySelectorAll('input:not([type="checkbox"]),select,textarea').forEach(el => el.value = '');
     }, 1400);
   }
 
-  // ── FADE IN OBSERVER ──
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.feature-card, .package-card, .step, .testimonial-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
+  // Fade in
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.style.opacity='1'; en.target.style.transform='translateY(0)'; } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.service-card,.why-card,.step,.test-card,.team-card').forEach(el => {
+    el.style.opacity='0'; el.style.transform='translateY(14px)';
+    el.style.transition='opacity 0.45s ease, transform 0.45s ease';
+    obs.observe(el);
   });
 
-  // ── AI CHAT ──
-  const SYSTEM_PROMPT = `You are a friendly, knowledgeable patient concierge for Medilife Health Service — a premium healthcare provider in the UAE offering home health services including IV therapy, doctor on call, blood tests at home, physiotherapy, and general wellness services.
+  // AI CHAT
+  const SYS = `You are a warm, helpful patient concierge for Medilife Healthcare Group — a DHA-licensed home healthcare provider in Dubai and the UAE.
 
-Your job is to:
-- Answer questions about Medilife's services warmly and helpfully
-- Help potential patients understand what service fits their situation
-- Encourage them to book a consultation or fill in the contact form on this page
-- Explain the AI-powered lead generation packages (Clinic Essentials, Growth System, Network Scale) if someone is a business enquiring about those
-- Keep responses concise — 2 to 4 sentences maximum unless more detail is genuinely needed
-- Never invent prices unless they ask specifically about the lead gen packages (Starter: AED 4,500 setup, Growth: AED 4,500 setup, Enterprise: custom)
-- Always be warm, professional, and human — never robotic
-- If you cannot answer something specific, offer to connect them with the team
+Medilife's services include:
+- Doctor on Call (24/7, home visits)
+- Blood Tests at Home (full body, PCR, STD/HIV, pregnancy)
+- IV Drip Therapy (hydration, vitamin, glutathione, hangover recovery)
+- NAD+ IV Therapy (anti-aging, wellness)
+- Home Nursing Care (post-operative, wound care, elderly)
+- Physiotherapy at Home
+- Vaccinations at Home (flu, chickenpox, HPV)
+- Elderly and Dementia Care
+- Air Ambulance Services
+- Telemedicine and Online Pharmacy
 
-You serve both individual patients looking for home healthcare AND healthcare businesses interested in the lead generation package.`;
+Key facts:
+- DHA Licensed — License No. 0002464
+- Phone: +971 52 345 2646
+- Email: support@medilifeglobal.com
+- WhatsApp available at +971 52 345 2646
+- Serves Dubai, Abu Dhabi, Sharjah, and across UAE
+- Average response time: 60 minutes
+- Available 24/7 including weekends and public holidays
+- DEWA Corporate Partner
+- Global offices in London, Australia, and India
 
-  let chatHistory = [];
-  let chatReady = false;
-  let isTyping = false;
+Your job:
+- Answer patient questions warmly and clearly in 2-4 sentences
+- Help them understand which service fits their situation
+- Encourage them to book via the form on this page, call, or WhatsApp
+- If someone has an emergency, immediately tell them to call +971 52 345 2646
+- Never invent prices — say "our team will advise on costs when you book"
+- Be conversational and human, not robotic`;
+
+  let hist = [], chatReady = false, busy = false;
 
   function toggleChat() {
     const btn = document.getElementById('chatToggle');
     const win = document.getElementById('chatWindow');
-    const badge = document.getElementById('chatBadge');
-    btn.classList.toggle('open');
-    win.classList.toggle('open');
-    badge.style.display = 'none';
+    btn.classList.toggle('open'); win.classList.toggle('open');
+    document.getElementById('chatBadge').style.display = 'none';
     if (!chatReady) {
       chatReady = true;
-      setTimeout(() => addBotMessage("Hi! I'm the Medilife AI Assistant. I can help you with information about our home health services, or if you're a healthcare provider, I can walk you through our lead generation packages. What can I help you with today?"), 300);
+      setTimeout(() => addBot("Hi! I'm the Medilife Health Assistant. I can help you with information about our home healthcare services across Dubai and the UAE, or help you book an appointment. What do you need today?"), 350);
     }
   }
 
-  function addBotMessage(text) {
-    const container = document.getElementById('chatMessages');
-    const msg = document.createElement('div');
-    msg.className = 'msg bot';
-    msg.textContent = text;
-    container.appendChild(msg);
-    container.scrollTop = container.scrollHeight;
+  function addBot(t) {
+    const c = document.getElementById('chatMessages');
+    const m = document.createElement('div'); m.className='msg bot'; m.textContent=t;
+    c.appendChild(m); c.scrollTop=c.scrollHeight;
   }
-
-  function addUserMessage(text) {
-    const container = document.getElementById('chatMessages');
-    const msg = document.createElement('div');
-    msg.className = 'msg user';
-    msg.textContent = text;
-    container.appendChild(msg);
-    container.scrollTop = container.scrollHeight;
+  function addUser(t) {
+    const c = document.getElementById('chatMessages');
+    const m = document.createElement('div'); m.className='msg user'; m.textContent=t;
+    c.appendChild(m); c.scrollTop=c.scrollHeight;
   }
-
   function showTyping() {
-    const container = document.getElementById('chatMessages');
-    const el = document.createElement('div');
-    el.className = 'msg typing';
-    el.id = 'typingIndicator';
-    el.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
-    container.appendChild(el);
-    container.scrollTop = container.scrollHeight;
+    const c = document.getElementById('chatMessages');
+    const el = document.createElement('div'); el.className='msg typing'; el.id='typingDot';
+    el.innerHTML='<div class="typing-dots"><span></span><span></span><span></span></div>';
+    c.appendChild(el); c.scrollTop=c.scrollHeight;
   }
-
-  function removeTyping() {
-    const el = document.getElementById('typingIndicator');
-    if (el) el.remove();
-  }
+  function rmTyping() { const el=document.getElementById('typingDot'); if(el) el.remove(); }
 
   async function sendMessage() {
-    const input = document.getElementById('chatInput');
-    const sendBtn = document.getElementById('chatSend');
-    const text = input.value.trim();
-    if (!text || isTyping) return;
-
-    input.value = '';
-    input.style.height = 'auto';
-    addUserMessage(text);
-    chatHistory.push({ role: 'user', content: text });
-
-    // Hide quick replies after first message
-    document.getElementById('quickReplies').style.display = 'none';
-
-    isTyping = true;
-    sendBtn.disabled = true;
+    const inp = document.getElementById('chatInput');
+    const txt = inp.value.trim();
+    if (!txt || busy) return;
+    inp.value=''; inp.style.height='auto';
+    addUser(txt); hist.push({role:'user',content:txt});
+    document.getElementById('quickReplies').style.display='none';
+    busy=true; document.getElementById('chatSend').disabled=true;
     showTyping();
-
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 1000,
-          system: SYSTEM_PROMPT,
-          messages: chatHistory
-        })
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYS,messages:hist})
       });
-
-      const data = await response.json();
-      removeTyping();
-
-      const reply = data.content?.[0]?.text || "Sorry, I had trouble with that. Please try again or contact us directly.";
-      addBotMessage(reply);
-      chatHistory.push({ role: 'assistant', content: reply });
-
-    } catch (err) {
-      removeTyping();
-      addBotMessage("I'm having a connection issue right now. Please fill in the contact form above and our team will reach out shortly.");
+      const d = await r.json();
+      rmTyping();
+      const reply = d.content?.[0]?.text || "I'm having a connection issue. Please call us directly at +971 52 345 2646 or WhatsApp us — we're available 24/7.";
+      addBot(reply); hist.push({role:'assistant',content:reply});
+    } catch {
+      rmTyping();
+      addBot("Sorry, I'm having a connection issue right now. Please call or WhatsApp us directly at +971 52 345 2646 — our team is available 24/7.");
     }
-
-    isTyping = false;
-    sendBtn.disabled = false;
+    busy=false; document.getElementById('chatSend').disabled=false;
   }
 
-  function sendQuick(text) {
-    document.getElementById('chatInput').value = text;
-    sendMessage();
-  }
+  function sendQuick(t) { document.getElementById('chatInput').value=t; sendMessage(); }
+  function handleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} }
+  function autoResize(el) { el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,90)+'px'; }
 
-  function handleKey(e) {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
-  }
-
-  function autoResize(el) {
-    el.style.height = 'auto';
-    el.style.height = Math.min(el.scrollHeight, 90) + 'px';
-  }
-
-  // Show badge after 4 seconds if chat not opened yet
-  setTimeout(() => {
-    if (!chatReady) {
-      document.getElementById('chatBadge').style.display = 'block';
-    }
-  }, 4000);
+  setTimeout(() => { if(!chatReady) document.getElementById('chatBadge').style.display='block'; }, 5000);
 </script>
 </body>
 </html>
